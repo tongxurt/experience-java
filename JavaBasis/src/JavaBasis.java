@@ -12,6 +12,8 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
  * Created by tongxu01 on 2017/7/24.
+ *
+ * 各种面试小细节
  */
 public class JavaBasis {
 
@@ -148,6 +150,9 @@ public class JavaBasis {
 
         CopyOnWriteArrayList arrayList = new CopyOnWriteArrayList();
 
+        String[] arr = new String[10];
+        System.out.println(arr[0]);
+        System.out.println(arr.length);
     }
 
 }
