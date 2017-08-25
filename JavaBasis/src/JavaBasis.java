@@ -12,12 +12,12 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
  * Created by tongxu01 on 2017/7/24.
- *
+ * <p>
  * 各种面试小细节
  */
 public class JavaBasis {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws CloneNotSupportedException {
 
         short sh = 1;
 //        s1 = s1 + 1; // wrong
@@ -153,6 +153,35 @@ public class JavaBasis {
         String[] arr = new String[10];
         System.out.println(arr[0]);
         System.out.println(arr.length);
+
+        Object o1 = new Object();
+        Object o2 = new Object();
+
+        System.out.println(o1.equals(o2));
+
+        User user1 = new User();
+        user1.setAge(1);
+
+        User user2 = new User();
+        user2.setAge(1);
+
+        User user3 = user1;
+        User user4 = (User) user1.clone();
+
+        System.out.println(user1.equals(user2)); // false
+        System.out.println(user3.equals(user1)); // true
+        System.out.println(user4.equals(user1)); // false
+        System.out.println(user1);
+        System.out.println(user2);
+        System.out.println(user3);
+        System.out.println(user4);
+
+// “==”比较的是值【变量(栈)内存中存放的对象的(堆)内存地址】
+// equal用于比较两个对象的值是否相同【不是比地址】
+//
+//【特别注意】Object类中的equals方法和“==”是一样的，没有区别，而String类，Integer类等等一些类，是重写了equals方法，
+// 才使得equals和“==不同”，所以，当自己创建类时，自动继承了Object的equals方法，要想实现不同的等于比较，必须重写equals方法。
+
     }
 
 }
