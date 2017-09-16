@@ -1,6 +1,9 @@
+package java.basis.map;
+
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.TreeMap;
+
 
 public class MapDemo {
     public static void main(String[] args) {
