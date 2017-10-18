@@ -18,5 +18,5 @@
 > 锁级别: http://blog.csdn.net/bluishglc/article/details/5626009
 
 ## JVM
-> 类加载机制: http://www.cnblogs.com/ityouknow/p/5603287.html
+> 类加载机制: http://www.cnblogs.com/ityouknow/p/5603287.html   
 > 垃圾回收机制: http://www.cnblogs.com/andy-zcx/p/5522836.html
