@@ -183,6 +183,21 @@ public class JavaBasis {
 // 才使得equals和“==不同”，所以，当自己创建类时，自动继承了Object的equals方法，要想实现不同的等于比较，必须重写equals方法。
 //        int add = 4.4; // 随便一个小数默认为double
         double add = 4.4;
+        float aff = 1.0f;
+
+        A:
+        // break 标记
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                System.out.println(i * j);
+                if (j / 3 == 1)
+                    break A;
+            }
+        }
+
+
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append('a');// 扩容机制，类似ashMap
     }
 
 }
