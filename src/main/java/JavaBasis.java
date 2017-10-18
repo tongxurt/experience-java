@@ -181,7 +181,8 @@ public class JavaBasis {
 //
 //【特别注意】Object类中的equals方法和“==”是一样的，没有区别，而String类，Integer类等等一些类，是重写了equals方法，
 // 才使得equals和“==不同”，所以，当自己创建类时，自动继承了Object的equals方法，要想实现不同的等于比较，必须重写equals方法。
-
+//        int add = 4.4; // 随便一个小数默认为double
+        double add = 4.4;
     }
 
 }
