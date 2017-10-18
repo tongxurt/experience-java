@@ -177,8 +177,6 @@ public class JavaBasis {
         System.out.println(user4);
 
 // “==”比较的是值【变量(栈)内存中存放的对象的(堆)内存地址】
-// equal用于比较两个对象的值是否相同【不是比地址】
-//
 //【特别注意】Object类中的equals方法和“==”是一样的，没有区别，而String类，Integer类等等一些类，是重写了equals方法，
 // 才使得equals和“==不同”，所以，当自己创建类时，自动继承了Object的equals方法，要想实现不同的等于比较，必须重写equals方法。
 //        int add = 4.4; // 随便一个小数默认为double

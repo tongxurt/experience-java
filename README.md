@@ -20,3 +20,6 @@
 ## JVM
 > 类加载机制: http://www.cnblogs.com/ityouknow/p/5603287.html   
 > 垃圾回收机制: http://www.cnblogs.com/andy-zcx/p/5522836.html
+
+## NIO
+> https://www.ibm.com/developerworks/cn/education/java/j-nio/
